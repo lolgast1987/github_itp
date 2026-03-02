@@ -59,7 +59,7 @@ def test_static_route(client):
     response = client.get('/static/bootstrap.min.css')
     # UNCOMMENT THE LINE BELOW TO FIX THE TEST:
     # assert response.status_code == 200
-    assert response.status_code == 404  # This will fail! Change to 200 to fix
+    assert response.status_code == 200  # This will fail! Change to 200 to fix
 
 
 # Test 5: Invalid upload is rejected
